@@ -1,0 +1,40 @@
+{
+  "name": "vkstream-clone",
+  "version": "1.0.0",
+  "description": "Application de streaming de films et séries",
+  "type": "web",
+  "framework": "react",
+  "language": "typescript",
+  "styling": "tailwindcss",
+  "dependencies": {
+    "required": [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "axios",
+      "lucide-react",
+      "swiper"
+    ],
+    "dev": [
+      "typescript",
+      "vite",
+      "tailwindcss",
+      "postcss",
+      "autoprefixer"
+    ]
+  },
+  "features": [
+    "movie-streaming",
+    "tv-shows",
+    "favorites",
+    "search",
+    "ratings"
+  ],
+  "deployment": {
+    "provider": "netlify",
+    "config": {
+      "buildCommand": "npm run build",
+      "publishDirectory": "dist"
+    }
+  }
+}
